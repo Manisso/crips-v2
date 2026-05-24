@@ -56,7 +56,7 @@ After every scan, Crips can send the output to an **AI** (OpenRouter, OpenAI, Ol
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/YOUR_USERNAME/crips.git
+git clone https://github.com/Manisso/crips-v2.git
 cd crips
 
 # 2. Install everything (packages + GeoLite2 databases)
