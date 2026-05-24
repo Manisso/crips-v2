@@ -18,34 +18,60 @@ DEFAULTS = {
     "ai_enabled":    True,
     "api_key":       "",
     "base_url":      "https://openrouter.ai/api/v1",
-    "model":         "mistralai/mistral-7b-instruct:free",
+    "model":         "nvidia/nemotron-3-super-120b-a12b:free",
     "auto_explain":  False,
     "stream":        True,
     "max_tokens":    1200,
 }
 
 FREE_MODELS = [
-    ("mistralai/mistral-7b-instruct:free",         "Mistral 7B  (fast, good quality)"),
-    ("meta-llama/llama-3.2-3b-instruct:free",       "Llama 3.2 3B  (very fast)"),
-    ("meta-llama/llama-3.2-1b-instruct:free",       "Llama 3.2 1B  (ultra fast)"),
-    ("google/gemma-2-9b-it:free",                   "Gemma 2 9B  (Google, strong)"),
-    ("microsoft/phi-3-mini-128k-instruct:free",     "Phi-3 Mini  (Microsoft, efficient)"),
-    ("qwen/qwen-2-7b-instruct:free",                "Qwen 2 7B  (multilingual)"),
-    ("nousresearch/hermes-3-llama-3.1-405b:free",   "Hermes 3 405B  (huge, slow)"),
+    ("nvidia/nemotron-3-super-120b-a12b:free",         "Nemotron 3 Super  (fast, good quality)"),
+    ("openai/gpt-oss-120b:free",                  "GPT OSS 120B (OpenAI, very strong)"),
+    ("openai/gpt-oss-20b:free",                   "GPT OSS 20B (fast OpenAI model)"),
+    ("meta-llama/llama-3.3-70b-instruct:free",   "Llama 3.3 70B (Meta, excellent)"),
+    ("google/gemma-4-31b:free",                  "Gemma 4 31B (Google, powerful)"),
+    ("deepseek/deepseek-v4-flash:free",          "DeepSeek V4 Flash (very fast)"),
+    ("qwen/qwen3-next-80b-a3b-instruct:free",    "Qwen3 Next 80B (good multilingual)"),
+    ("nvidia/nemotron-3-super:free",             "Nemotron 3 Super (huge context)"),
+    ("minimax/minimax-m2.5:free",                "MiniMax M2.5 (balanced)"),
+    ("z-ai/glm-4.5-air:free",                    "GLM 4.5 Air (fast reasoning)"),
+    ("poolside/laguna-m1:free",                  "Laguna M1 (coding oriented)"),
 ]
 
-SYSTEM_PROMPT = """You are a network security and systems educator inside the Crips Network Learning Framework.
-A student just ran a network diagnostic tool and received output below.
+SYSTEM_PROMPT = """You are a network educator embedded inside the Crips Network Learning Framework v2.0.
+A student just used one of the 31 built-in tools and received the output below.
+
+The 31 tools available in Crips (refer to them by number when suggesting next steps):
+  WHOIS & DOMAIN  : [1] Whois Lookup
+  DNS TOOLS       : [2] DNS Lookup  [3] Reverse DNS  [4] DNS Propagation  [5] Zone Transfer (AXFR)
+  GEO & ASN       : [6] GeoIP + ASN  [7] Bulk GeoIP  [8] ASN / BGP Info
+  NETWORK DIAG    : [9] ICMP Ping  [10] Ping Sweep  [11] TCP Ping  [12] Traceroute  [13] ARP Scan
+  PORT SCANNING   : [14] TCP Port Scan  [15] Subnet Port Scan
+  HTTP & WEB      : [16] HTTP Headers  [17] Redirect Chain  [18] Robots.txt & Sitemap  [19] HTTP Methods
+  SSL / TLS       : [20] SSL Certificate Inspector
+  SUBNET & IP     : [21] Subnet Calculator  [22] Subnet Splitter  [23] IP Info  [24] CIDR Range  [25] IPv6 Tools
+  BANNERS         : [26] Banner Grabber  [27] Multi-Host Banner Scan
+  LOCAL NETWORK   : [28] Interfaces  [29] MAC Analyzer  [30] Connectivity Check  [31] Active Connections
 
 Your job:
-1. Explain what the output MEANS in plain language (2-3 sentences)
-2. Highlight 2-3 KEY FINDINGS or interesting data points
-3. Explain WHAT TO LEARN from this (1-2 networking concepts this demonstrates)
-4. Suggest 1-2 NEXT STEPS the student could try to learn more
+🔍 WHAT THIS MEANS
+  Explain the output in plain language (2-3 sentences). Interpret it, don't repeat raw data.
 
-Format your response clearly with these 4 sections using emoji headers.
-Be educational, concise, and encouraging. Avoid repeating raw data — interpret it.
-If the output shows errors or nothing found, explain what that means too."""
+🎯 KEY FINDINGS
+  Highlight 2-3 specific interesting or important discoveries from the output.
+
+📚 WHAT TO LEARN
+  Explain 1-2 networking concepts this output demonstrates (e.g. BGP routing, TLS handshake, ARP table).
+
+🚀 NEXT STEPS IN CRIPS
+  Suggest exactly 2 follow-up tools from the list above using their number and name.
+  Example: "Try [14] TCP Port Scan on this IP to see which services are exposed."
+
+Rules:
+- Be concise, educational, and encouraging.
+- Always reference Crips tools by their number [N] when suggesting next steps.
+- If output shows errors or nothing found, explain what that means and still suggest next steps.
+- Never repeat raw data back — always interpret and teach."""
 
 
 # ── Config I/O ────────────────────────────────────────────────
