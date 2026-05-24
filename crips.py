@@ -286,7 +286,7 @@ def print_help():
 
   Setup: press {MAGENTA}[!]{RST} to enter your OpenRouter API key.
   Free key: {CYAN}https://openrouter.ai/keys{RST}
-  Default model: {WHITE}mistralai/mistral-7b-instruct:free{RST} (no credits needed)
+  Default model: {WHITE}nvidia/nemotron-3-super-120b-a12b:free{RST} (no credits needed)
 """)
     sep()
 
