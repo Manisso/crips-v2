@@ -332,7 +332,6 @@ Do **not** use this tool against systems you do not own or have explicit written
 
 ## 🙏 Credits
 
-- Original concept: [Manisso/Crips](https://github.com/Manisso/Crips)
 - GeoLite2 databases: [P3TERX/GeoLite.mmdb](https://github.com/P3TERX/GeoLite.mmdb)
 - AI powered by: [OpenRouter](https://openrouter.ai)
 
