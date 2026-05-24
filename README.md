@@ -220,12 +220,18 @@ The AI reads the raw tool output and generates a **learning report**:
 
 | Model | Speed | Quality |
 |---|---|---|
-| `mistralai/mistral-7b-instruct:free` | Fast | ⭐⭐⭐⭐ |
-| `meta-llama/llama-3.2-3b-instruct:free` | Very fast | ⭐⭐⭐ |
-| `google/gemma-2-9b-it:free` | Medium | ⭐⭐⭐⭐ |
-| `microsoft/phi-3-mini-128k-instruct:free` | Fast | ⭐⭐⭐ |
-| `qwen/qwen-2-7b-instruct:free` | Fast | ⭐⭐⭐ |
-| `nousresearch/hermes-3-llama-3.1-405b:free` | Slow | ⭐⭐⭐⭐⭐ |
+| `openai/gpt-oss-120b:free` | Medium | ⭐⭐⭐⭐⭐ |
+| `openai/gpt-oss-20b:free` | Fast | ⭐⭐⭐⭐ |
+| `meta-llama/llama-3.3-70b-instruct:free` | Medium | ⭐⭐⭐⭐⭐ |
+| `google/gemma-4-31b:free` | Medium | ⭐⭐⭐⭐ |
+| `deepseek/deepseek-v4-flash:free` | Very fast | ⭐⭐⭐⭐ |
+| `qwen/qwen3-next-80b-a3b-instruct:free` | Fast | ⭐⭐⭐⭐ |
+| `nvidia/nemotron-3-super:free` | Slow | ⭐⭐⭐⭐⭐ |
+| `minimax/minimax-m2.5:free` | Fast | ⭐⭐⭐⭐ |
+| `z-ai/glm-4.5-air:free` | Very fast | ⭐⭐⭐⭐ |
+| `poolside/laguna-m1:free` | Medium | ⭐⭐⭐⭐⭐ |
+| `liquid/lfm2.5-1.2b-instruct:free` | Ultra fast | ⭐⭐ |
+| `nvidia/nemotron-nano-9b-v2:free` | Very fast | ⭐⭐⭐ |
 
 Get a free key: **https://openrouter.ai/keys**
 
