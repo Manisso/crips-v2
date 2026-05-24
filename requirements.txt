@@ -1,0 +1,57 @@
+# ============================================================
+#   Crips Framework v2.0 — requirements.txt
+#   Python 3.8+  |  Run: pip install -r requirements.txt
+#   Then:        python3 install.py  (also downloads GeoLite2)
+# ============================================================
+
+# ── Whois ────────────────────────────────────────────────────
+python-whois==0.9.6
+
+# ── DNS ──────────────────────────────────────────────────────
+dnspython==2.7.0
+
+# ── IP / ASN / BGP ───────────────────────────────────────────
+ipwhois==1.3.0
+
+# ── GeoIP (MaxMind reader — DBs auto-downloaded by install.py)
+geoip2==4.8.1
+
+# ── Packet tools (ICMP ping, traceroute, ARP) ────────────────
+scapy==2.6.1
+
+# ── HTTP analysis + AI API calls ─────────────────────────────
+requests==2.32.3
+
+# ── SSL/TLS ──────────────────────────────────────────────────
+pyOpenSSL==24.2.1
+cryptography==43.0.1
+
+# ── Network address math + MAC OUI ───────────────────────────
+netaddr==1.3.0
+
+# ── Local network interfaces ─────────────────────────────────
+netifaces==0.11.0
+
+# ── Terminal colors (Windows ANSI) ───────────────────────────
+colorama==0.4.6
+
+# ── Optional: richer active connections (tool 31) ────────────
+# psutil==6.0.0
+
+# ============================================================
+# GeoLite2 databases are auto-downloaded by install.py from:
+#   https://github.com/P3TERX/GeoLite.mmdb  (no signup needed)
+#
+# Files downloaded into the crips/ folder:
+#   GeoLite2-ASN.mmdb
+#   GeoLite2-City.mmdb
+#   GeoLite2-Country.mmdb
+# ============================================================
+
+# ============================================================
+# AI Feature (OpenRouter / any OpenAI-compatible API):
+#   - No extra pip package needed (uses requests above)
+#   - Configure inside the tool:  press [!]
+#   - Free API key:  https://openrouter.ai/keys
+#   - Default model: mistralai/mistral-7b-instruct:free
+# ============================================================
